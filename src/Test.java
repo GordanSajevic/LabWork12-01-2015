@@ -1,6 +1,8 @@
 
 public class Test {
 
+	//Testna klasa
+	
 	public static void main(String[] args) {
 		QueueInt queue = new QueueInt();
 		for (int i=1; i<6; i++)

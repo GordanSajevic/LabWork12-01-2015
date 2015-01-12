@@ -11,6 +11,8 @@ public class Draw {
 	
 	public static void main(String[] args) {
 		
+		//U main funkciji kreiramo frame i panel, zatim panelu dodajemo mouseHandler
+		
 		JFrame window = new JFrame("Window");
 		JPanel panel = new JPanel();
 		MouseHandler handler = new MouseHandler();
@@ -20,6 +22,13 @@ public class Draw {
 		window.setVisible(true);
 		window.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 	}
+	
+	/**
+	 * MouseHandler implementira MouseListener, u kojem smo overridali metodu mousePressed, 
+	 * tako da kreira crveni krug za jedan klik mišem
+	 * @author gordansajevic
+	 *
+	 */
 	
 	private static class MouseHandler implements MouseListener
 	{
